@@ -10,6 +10,8 @@
 }
 a, li{
     text-decoration: none;
+    color: #ffffff;
+}
 }
 li a:visited {
     color: #ffffff;
