@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
+
+*,
+:after,
+:before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+a, li{
+    text-decoration: none;
+}
+li a:visited {
+    color: #ffffff;
+}
+li{
+    color: #ffffff;
+}
+ul{
+    list-style: none;
+    text-align: left;
+    margin: initial;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("../img/bg-tang.png");
+    background-position: right 90%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header{
+    padding: 1em;
+    background-image: url("../img/hero.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.menu-desktop{
+    display: none;
+}
+.menu{
+    margin: auto 0;
+}
+.menu-btn,
+.menu-btn-luk{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+#menu-nav{
+    display: none;
+    justify-content: space-between;
+    background-color: #074F71;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 1.7em 1em 1.7em 2em;
+    line-height: 3;
+}
+#menu-nav:target{
+    display: flex;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.logo{
+    height: 60px;
+    width: 60px;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+.bot{
+    display: flex;
+    flex-direction: column;
+}
+.top-bot{
+    display: flex;
+    justify-content: space-between;
+}
+.produkt-navn{
+    font-family: Chelsea Market;
+    color: #074F71;
+    font-weight: normal;
+}
+.facebook-share{
+    height: 28px;
+    width: 109px;
+    margin: auto 0;
+}
+.produkt-beskrivelse{
+    margin-top: .5em;
+    font-size: 16px;
+    color: #707070;
+    line-height: 25px;
+}
+
+
+main{
+    padding: 0 1em 6.3em 1em;
+}
+.produkt-nav{
+    margin-bottom: 1.5em;
+}
+#produkt-nav{
+    padding: 1em 0;
+}
+.indhold-btn{
+    border-radius: 16px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: .8em 2em;
+    color: #074F71;
+    background-color: #ffffff;
+    box-shadow: 0 1px 6px rgba(174, 174, 174, 20%);
+    margin-right: .5em;
+}
+.opskrifter-btn,
+.top-btn{
+    border-radius: 16px;
+    font-size: 16px;
+    padding: .8em 2em;
+    color: #ffffff;
+    background-color: #51BEF1;
+    box-shadow: 0 1px 6px rgba(174, 174, 174, 20%);
+}
+.top-btn{
+    width: 100%;
+    margin: 1em 0 .5em 0;
+    display: block;
+    text-align: center;
+}
+
+.indhold-beskrivelse{
+    font-weight: 600;
+    color: #074F71;
+    margin: 1em 0 .5em 0;
+}
+.produkt{
+    display: flex;
+}
+.produkt-billede{
+    min-width: 110px;
+    min-height: 110px;
+    border-radius: 6px;
+}
+.produkt-info{
+    margin: auto 0;
+    line-height: 1.8em;
+    padding: 1em;
+}
+.produkt-navn-lille,
+.indkluderet{
+    font-size: 16px;
+    color: #707070;
+}
+.produkt-pris,
+.opskrift-navn{
+    font-size: 18px;
+    color: #51BEF1;
+    font-weight: 600;
+}
+
+#torsk,
+#kartoffel,
+#portebello{
+    display: none;
+    text-align: center;
+    color: #51BEF1;
+}
+#torsk:target,
+#kartoffel:target,
+#portebello:target{
+    display: block;
+}
+#torsk a,
+#kartoffel a,
+#portebello a{
+    color:#51BEF1;
+}
+
+iframe{
+    width: 100%;
+    height: 250px;
+    margin: .5em auto;
+}
+
+footer{
+    border-radius: 15px;
+    width: 100%;
+    padding: 1em;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    box-shadow: 0px -5px 15px 5px rgba(219,219,219,0.5);
+}
+
+.total-boks{
+    text-align: center;
+    margin: auto;
+}
+
+.total-pris{
+    font-weight: 600;
+    color: #074F71;
+    font-size: 18px;
+}
+.total-tekst{
+    color: #51BEF1;
+}
+
+.koeb-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.kurv-btns{
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+}
+
+.tilfoej-btn{
+    border-radius: 16px;
+    font-size: 16px;
+    padding: 1em 2em;
+    color: #ffffff;
+    background-color: #51BEF1;
+    margin-right: .5em;
+}
+.se-kurv-btn{
+    border-radius: 16px;
+    padding: .9em .9em;
+    color: #ffffff;
+    background-color: #074F71;
+}
+.produkt-overordnet{
+    display: none;
+}
+.desktop-footer{
+    display: none;
+}
+
+/* Tablet */
+@media screen and (min-width: 570px) {
+
+    .bot{
+        margin-top: 25em;
+    }
+    main{
+        padding: 11em 3em 6.3em 3em;
+    }
+    header{
+        padding: 1em 3em 6.3em 3em;
+    }
+    iframe{
+        height: 420px;
+    }
+    .produkt-overordnet{
+        display: none;
+    }
+    .desktop-footer{
+        display: none;
+    }
+    .koeb-info{
+        justify-content: space-evenly;
+    }
+    .total-boks{
+        margin: 0;
+    }
+    ul{
+        margin: 0 auto;
+        padding-left: 3em;
+        text-align: center;
+    }
+    .menu-btn-luk{
+        margin: 0 2em 0 0;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1025px) {
+    body{
+        background-image: url("../img/bg-tang-stor.png");
+        background-position: right bottom;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .menu-desktop{
+        display: block;
+        margin: auto;
+    }
+    .menu-desktop ul{
+        display: flex;
+    }
+    .menu-desktop li{
+        margin-right: 2em;
+    }
+    .menu a,
+    .menu #menu-nav{
+        display: none;
+    }
+    header{
+        background-color: #074F71;
+        padding: 1.5em 5em;
+        background-image: none;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 3em;
+    }
+    main{
+        padding: 0em 3em 1em 3em;
+        margin: 0 auto;
+        max-width: 70%;
+    }
+    .bot{
+        margin-top: 0;
+        display: none;
+    }
+    .produkt-overordnet{
+        display: flex;
+        width: 100%;
+        margin-bottom: 3em;
+    }
+    .produkt-overordnet-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .produkt-overordnet-info p{
+        margin: 1em 0;
+    }
+    .produkt-hero-billede{
+        margin-right: 2em;
+    }
+    .koeb-info{
+        display: none;
+    }
+    #produkt-navn{
+        margin: 3em 0;
+    }
+    .produkt-navn{
+        margin-bottom: .3em;
+    }
+    .total-pris{
+        margin: .5em 0;
+        font-size: 2em;
+        color: #51BEF1;
+    }
+    iframe{
+        height: 720px;
+    }
+    .se-kurv-btn {
+        padding: .9em .9em;
+    }
+    .produkter{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .produkt{
+        width: 31%;
+        margin: auto 0;
+    }
+    .produkt-billede{
+        height: 100%;
+        margin: auto 0;
+    }
+    .indhold-beskrivelse{
+        margin: 2em 0 .5em 0;
+    }
+    .top{
+        margin: 0 auto;
+        min-width: 70%;
+    }
+    footer{
+        border-radius: 0;
+        height: 100%;
+        width: 100%;
+        padding: 2em 0;
+        position: relative;
+        left: 0;
+        bottom: 0;
+        background-color: #ffffff;
+        box-shadow: 0px -5px 15px 5px rgb(219 219 219 / 50%);
+    }
+    .desktop-footer{
+        width: 70%;
+        margin: auto;
+        display: flex;
+        justify-content: space-evenly;
+        color: #707070;
+    }
+    .ikon-footer{
+        width: 3em;
+        height: 3em;
+        margin-right: .5em;
+    }
+    .ikon-info{
+        display: flex;
+        flex-direction: column;
+    }
+    .ikon-beholder{
+        display: flex;
+        margin-top: 1em;
+    }
+    h4{
+        color: #074F71;
+    }
+}
